@@ -42,7 +42,8 @@
 
 ### writing a function // generateText()
 - writing our own function without parameters(`this.generateText()`)
-- piecing together a 3 word sentence with words from the three arrays (article -> noun -> verb), with the indices set by hand-- add a „. “ to the end of the sentence using the <br>-html tag
+- piecing together a 3 word sentence with words from the three arrays (article -> noun -> verb), with the indices set by hand
+- add a „. “ to the end of the sentence using the `<br>`-html tag
 - `return` the sentence
 - add return value of function to `this.generatedText` in constructor
 - view generated text in browser

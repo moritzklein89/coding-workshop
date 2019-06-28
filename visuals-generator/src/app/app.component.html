@@ -1,0 +1,3 @@
+<svg [attr.height]="windowHeight" [attr.width]="windowWidth">
+  <polygon *ngFor="let polygon of polygonsOutput" [attr.points]="polygon.pointsForSVG" style="fill:blue" />
+</svg>

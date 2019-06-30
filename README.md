@@ -68,33 +68,40 @@
 - add array of sentence structures (contains arrays of strings with values of word types e.g. [‚article‘, ‚noun‘, ‚verb‘])
 - update `generateText()` to pick a random sentence structure and then piece together the sentence with the picked structure using the `if-statement`
 
-###  more optional side tasks // 
+###  more optional side tasks // recursion & styling
 - optional: generateText with sentence prolongation probability (`recursion`)
 - optional: add `html styling` to highlight word types
 
 ## 2 Polygon-Generator
 
-writing our own class: polygon
-adding instance variables to the class: points 1-4
-writing a constructor that takes 4 points as parameters
-writing render(), a function that converts the polygon’s points into a format that SVG can use
-create a polygon using the new-keyword, setting the points by hand
-calling render() on our newly created polygon
-adding the polygon to the polygonsOutput -> view it in the browser
+### creating a class // polygon
+- writing our own `class`: polygon
+- adding `instance variables` to the class: points 1-4
+- writing a `constructor` that takes 4 points as parameters
+- writing `render()`, a function that converts the polygon’s points into a format that SVG can use
+- create a polygon using the `new`-keyword, setting the points by hand
+- calling render() on our newly created polygon
+- adding the polygon to the `polygonsOutput` -> view it in the browser
 
-replace variables points 1-4 with array points
-rewrite the render()-function to work with the points array
-create a new polygon using an array as parameter
-view the polygon
+### a more versatile class // adding an array for the points
+- replace variables points 1-4 with array `points`
+- rewrite the render()-function to work with the points array
+- create a new polygon using an array as parameter
+- view the polygon
 
-add the getRandomNumber(low, high)-method from our previous project
-create function generateRandomPoint(xMax, yMax)
-create function generateRandomPolygon(pointsCount)
-use it in the constructor instead of having all the cumbersome code there
-play around with the pointsCount and view the polygon!
+### generating points & arrays // creating randomized polygons
+- add the `getRandomNumber(low, high)`-method from our previous project
+- create function `generateRandomPoint(xMax, yMax)`
+- create function `generateRandomPolygon(pointsCount)`
+- use it in the constructor instead of having all the cumbersome code there
+- play around with the `pointsCount` and view the polygon!
 
-implement new function morph(intensity, xMax, yMax) on polygon
-we need getRandomNumber(low, high) on polygon for that! (explain why we can’t use the other one)
-implement new function displacePointBy(point, xOffset, yOffset, xMax, yMax) that changes the position of a point by the given offset, but not to a spot outside xMax and yMax
-call displacePointBy from the morph function (here we can try different ideas!)
-options: 1. displace all the points by random individual values 2. displace all the points by the same value
+### animation // change the shape of the polygon over time
+- implement new function `morph(intensity, xMax, yMax)` on polygon
+- we need getRandomNumber(low, high) on polygon for that
+- implement new function `displacePointBy(point, xOffset, yOffset, xMax, yMax)` that changes the position of a point by the given offset, but not to a spot outside xMax and yMax
+- call displacePointBy from the morph function (here we can try different ideas!)
+
+### more optional side tasks // different kinds of morphing the polygon
+- displace all the points by random individual values
+- displace all the points by the same value
